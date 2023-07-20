@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <h1>
+            <span class="cor1"> Catálogo </span>
+            <span class="cor2"> Online </span>
+        </h1>
+        <title>Cadastro</title>
+        <style>
+             .cor1 {
+                color: #3734A9;
+                font-size: 32px; 
+                font-family: Outfit; 
+                font-weight: 400; 
+                line-height: 44.99px; 
+                word-wrap: "break-word";    
+            }
+            .cor2 {
+                color: #002A48;
+                font-size: 32px; 
+                font-family: Outfit; 
+                font-weight: 400; 
+                line-height: 44.99px; 
+                word-wrap: "break-word";
+            }
+            form {
+                width: 300px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                text-align: center;
+                color: #3734A9;
+                font-family: Jost;
+                font-weight: 700;
+            }
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: #3734A9;
+                color: #fff;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            input[id="TextnomeProd"],
+            input[id="TextDescricaoProd"],
+            input[id="TextPrecoVenda"],
+            input[id="TextQuantidade"],
+            input[id="TextCategoria"] {
+                width: 95%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            textarea {
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                width: 95%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border-radius: 4px;
+        
+            }
+            p {
+                color: #C5C5C5; 
+                font-size: 12px; 
+                font-family: Inter; 
+                text-align: center;
+                font-weight: 400;
+                word-wrap: break-word; 
+            }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+        <div style="width: 1728px; height: 30px; background: #F1F1FF; border: 0.50px #EFEFEF solid"></div>
+        <h2><b>CADASTRO DE PRODUTO</b></h2>
+    </head>
+    <body>
+        <form action="cadastrar_produto.php" method="post">
+                <div class="campos">
+                    <label for="TextnomeProd"></label>
+                    <input type="text" id="TextnomeProd" placeholder="Nome do produto*" required/>
+                </div>
+
+                <div class="campos">
+                    <label for="TextDescricaoProd"></label>
+                    <textarea  id="TextDescricaoProd" cols="38" rows="10" placeholder="Descrição*"required></textarea>
+                </div>
+
+                <div>
+                    <label for="TextPrecoVenda"></label>
+                    <input type="text" id="TextPrecoVenda" placeholder="Preço de venda*" required/>
+                </div>
+
+                <div>
+                    <label for="TextQuantidade"></label>
+                    <input type="text" id="TextQuantidade" placeholder="Quantidade*" required/>
+                </div>
+
+                <div>
+                    <label for="TextCategoria"></label>
+                    <input type="text" id="TextCategoria" placeholder="Categoria*" required/>
+                </div>
+                <p>(*) Campo de preenchimento obrigatório</p>
+                <input type="submit" value="Cadastrar"/>
+        </form>
+    </body>
+</html>
